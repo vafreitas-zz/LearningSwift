@@ -1,0 +1,24 @@
+//
+//  AppDelegate.swift
+//  LearningSwift
+//
+//  Created by victor.freitas on 13/01/21.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        window = UIWindow()
+        window?.rootViewController = LoginController(viewModel: .init())
+
+        window?.makeKeyAndVisible()
+        return true
+    }
+}
+

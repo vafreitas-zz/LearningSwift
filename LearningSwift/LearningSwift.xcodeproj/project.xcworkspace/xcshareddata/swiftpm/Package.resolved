@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AloeStackView",
+        "repositoryURL": "https://github.com/marlimox/AloeStackView",
+        "state": {
+          "branch": null,
+          "revision": "28ef1e50cef1eb38512fae67eb45ddc508f9a9f8",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "TinyConstraints",
+        "repositoryURL": "https://github.com/roberthein/TinyConstraints",
+        "state": {
+          "branch": null,
+          "revision": "f413ea53b886de81b925eeb37a14538fe6ae4912",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "XCoordinator",
+        "repositoryURL": "https://github.com/quickbirdstudios/XCoordinator",
+        "state": {
+          "branch": null,
+          "revision": "4b6fc6f7359078c322e3b354854ed4ac5c12c5e1",
+          "version": "2.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
