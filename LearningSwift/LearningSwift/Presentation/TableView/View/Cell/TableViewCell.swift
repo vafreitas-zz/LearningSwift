@@ -8,31 +8,45 @@
 import UIKit
 import Core
 
+protocol TableViewCellDelegate: AnyObject {
+    func textFieldChange(_ textField: UITextField, string: String, textFieldType: TextFieldType)
+}
+
 class TableViewCell: UITableViewCell {
+
+    // MARK: Outlets
+
+    @IBOutlet weak var textField: UITextField!
 
     // MARK: Properties
 
-    let label = UILabel() .. {
-        $0.text = ""
+    var textFieldType: TextFieldType = .none
+    weak var delegate: TableViewCellDelegate?
+
+    // MARK: Setup Methods
+
+    func setup(model: TextFieldModel) {
+        textField.placeholder = model.title
+        textFieldType = model.type
+        textField.delegate = self
     }
+}
 
-    // MARK: Initializer
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: "cell")
-        addSubview(label)
-
-        label.edgesToSuperview(excluding: .leading)
-        label.leadingToSuperview(offset: 24)
-
-        selectionStyle = .none
+extension TableViewCell: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        delegate?.textFieldChange(textField, string: string, textFieldType: textFieldType)
+        return true
     }
+}
 
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    func setup(text: String) {
-        label.text = text
-    }
+enum TextFieldType {
+    case cep
+    case address
+    case birthdate
+    case city
+    case neighborhood
+    case number
+    case genre
+    case complement
+    case none
 }

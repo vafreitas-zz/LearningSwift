@@ -16,5 +16,4 @@ class TableViewHeader: UITableViewHeaderFooterView {
     func setup(text: String) {
         label.text = text
     }
-    
 }

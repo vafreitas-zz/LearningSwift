@@ -28,6 +28,8 @@
 		A4AFD3A725AF5A1800DEFACA /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4AFD3A525AF5A1800DEFACA /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4AFD58925AF62CD00DEFACA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD58825AF62CD00DEFACA /* LoginViewModel.swift */; };
 		A4AFD58E25AF62E700DEFACA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD58D25AF62E700DEFACA /* LoginModel.swift */; };
+		A4C6746025C9D63700CA8E99 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4C6745F25C9D63700CA8E99 /* TableViewCell.xib */; };
+		A4C6746525C9D7D800CA8E99 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C6746425C9D7D800CA8E99 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		A4AFD3A525AF5A1800DEFACA /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AFD58825AF62CD00DEFACA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A4AFD58D25AF62E700DEFACA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		A4C6745F25C9D63700CA8E99 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		A4C6746425C9D7D800CA8E99 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		A4435F5D25B876270058F48B /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				A4C6746325C9D7C900CA8E99 /* Model */,
 				A4435F6925B877E80058F48B /* Controller */,
 				A4435F6225B8768A0058F48B /* View */,
 			);
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A4435F6F25B878D30058F48B /* TableViewCell.swift */,
+				A4C6745F25C9D63700CA8E99 /* TableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -289,6 +295,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A4C6746325C9D7C900CA8E99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6746425C9D7D800CA8E99 /* TextField.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AFD0DC25AF350800DEFACA /* LaunchScreen.storyboard in Resources */,
+				A4C6746025C9D63700CA8E99 /* TableViewCell.xib in Resources */,
 				A4435F7B25B87AE60058F48B /* TableViewHeader.xib in Resources */,
 				A4AFD0D925AF350800DEFACA /* Assets.xcassets in Resources */,
 			);
@@ -433,6 +448,7 @@
 				A4435F7525B87AC70058F48B /* TableViewHeader.swift in Sources */,
 				A4AFD58E25AF62E700DEFACA /* LoginModel.swift in Sources */,
 				A4435F7025B878D30058F48B /* TableViewCell.swift in Sources */,
+				A4C6746525C9D7D800CA8E99 /* TextField.swift in Sources */,
 				A4435F6B25B877F60058F48B /* TableViewController.swift in Sources */,
 				A4435F6425B876970058F48B /* TableView.swift in Sources */,
 				A4AFD58925AF62CD00DEFACA /* LoginViewModel.swift in Sources */,

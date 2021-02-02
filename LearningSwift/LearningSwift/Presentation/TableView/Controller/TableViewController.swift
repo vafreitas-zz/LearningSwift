@@ -25,3 +25,10 @@ class TableViewController: UIViewController {
     }
 
 }
+
+extension UITableView {
+
+    func register<T: UITableViewCell>(type: T.Type) {
+        
+    }
+}
