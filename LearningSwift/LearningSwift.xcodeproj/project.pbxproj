@@ -12,6 +12,13 @@
 		A4435F7025B878D30058F48B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4435F6F25B878D30058F48B /* TableViewCell.swift */; };
 		A4435F7525B87AC70058F48B /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4435F7425B87AC70058F48B /* TableViewHeader.swift */; };
 		A4435F7B25B87AE60058F48B /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4435F7A25B87AE60058F48B /* TableViewHeader.xib */; };
+		A468F8D825D58FF8007FB6E9 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8D725D58FF8007FB6E9 /* AccountCoordinator.swift */; };
+		A468F8DC25D590B3007FB6E9 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8DB25D590B3007FB6E9 /* NameView.swift */; };
+		A468F8E025D590BD007FB6E9 /* CPFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8DF25D590BD007FB6E9 /* CPFView.swift */; };
+		A468F8E425D590C6007FB6E9 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8E325D590C6007FB6E9 /* NameController.swift */; };
+		A468F8E825D590CE007FB6E9 /* CPFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8E725D590CE007FB6E9 /* CPFController.swift */; };
+		A468F8EC25D590D6007FB6E9 /* NameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8EB25D590D6007FB6E9 /* NameViewModel.swift */; };
+		A468F8F025D590E1007FB6E9 /* CPFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A468F8EF25D590E1007FB6E9 /* CPFViewModel.swift */; };
 		A4AFD0D025AF350800DEFACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD0CF25AF350800DEFACA /* AppDelegate.swift */; };
 		A4AFD0D425AF350800DEFACA /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD0D325AF350800DEFACA /* LoginController.swift */; };
 		A4AFD0D925AF350800DEFACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0D825AF350800DEFACA /* Assets.xcassets */; };
@@ -70,6 +77,13 @@
 		A4435F6F25B878D30058F48B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		A4435F7425B87AC70058F48B /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		A4435F7A25B87AE60058F48B /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		A468F8D725D58FF8007FB6E9 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		A468F8DB25D590B3007FB6E9 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		A468F8DF25D590BD007FB6E9 /* CPFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFView.swift; sourceTree = "<group>"; };
+		A468F8E325D590C6007FB6E9 /* NameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameController.swift; sourceTree = "<group>"; };
+		A468F8E725D590CE007FB6E9 /* CPFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFController.swift; sourceTree = "<group>"; };
+		A468F8EB25D590D6007FB6E9 /* NameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewModel.swift; sourceTree = "<group>"; };
+		A468F8EF25D590E1007FB6E9 /* CPFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFViewModel.swift; sourceTree = "<group>"; };
 		A4AFD0CC25AF350800DEFACA /* LearningSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AFD0CF25AF350800DEFACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4AFD0D325AF350800DEFACA /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -167,6 +181,44 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		A468F8D325D58FD6007FB6E9 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A468F8D725D58FF8007FB6E9 /* AccountCoordinator.swift */,
+				A468F8D625D58FEB007FB6E9 /* ViewModel */,
+				A468F8D525D58FE6007FB6E9 /* Controller */,
+				A468F8D425D58FE3007FB6E9 /* View */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A468F8D425D58FE3007FB6E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A468F8DB25D590B3007FB6E9 /* NameView.swift */,
+				A468F8DF25D590BD007FB6E9 /* CPFView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A468F8D525D58FE6007FB6E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A468F8E325D590C6007FB6E9 /* NameController.swift */,
+				A468F8E725D590CE007FB6E9 /* CPFController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A468F8D625D58FEB007FB6E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A468F8EB25D590D6007FB6E9 /* NameViewModel.swift */,
+				A468F8EF25D590E1007FB6E9 /* CPFViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A4AFD0C325AF350800DEFACA = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +289,7 @@
 		A4AFD10725AF353000DEFACA /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A468F8D325D58FD6007FB6E9 /* Account */,
 				A4435F5D25B876270058F48B /* TableView */,
 				A4AFD37025AF58D800DEFACA /* Login */,
 			);
@@ -450,8 +503,15 @@
 				A4435F7025B878D30058F48B /* TableViewCell.swift in Sources */,
 				A4C6746525C9D7D800CA8E99 /* TextField.swift in Sources */,
 				A4435F6B25B877F60058F48B /* TableViewController.swift in Sources */,
+				A468F8E025D590BD007FB6E9 /* CPFView.swift in Sources */,
+				A468F8F025D590E1007FB6E9 /* CPFViewModel.swift in Sources */,
+				A468F8E425D590C6007FB6E9 /* NameController.swift in Sources */,
+				A468F8DC25D590B3007FB6E9 /* NameView.swift in Sources */,
 				A4435F6425B876970058F48B /* TableView.swift in Sources */,
 				A4AFD58925AF62CD00DEFACA /* LoginViewModel.swift in Sources */,
+				A468F8E825D590CE007FB6E9 /* CPFController.swift in Sources */,
+				A468F8EC25D590D6007FB6E9 /* NameViewModel.swift in Sources */,
+				A468F8D825D58FF8007FB6E9 /* AccountCoordinator.swift in Sources */,
 				A4AFD37525AF590000DEFACA /* LoginView.swift in Sources */,
 				A4AFD0D425AF350800DEFACA /* LoginController.swift in Sources */,
 				A4AFD0D025AF350800DEFACA /* AppDelegate.swift in Sources */,
