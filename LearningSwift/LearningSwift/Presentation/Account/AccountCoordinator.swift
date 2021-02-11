@@ -25,11 +25,14 @@ class AccountCoordinator: NavigationCoordinator<AccountRoute> {
     override func prepareTransition(for route: AccountRoute) -> NavigationTransition {
         switch route {
         case .name:
-            return .none()
+            let viewModel = NameViewModel(router: weakRouter)
+            let controller = NameController(viewModel: viewModel)
+            return .present(controller)
             
         case let .cpf(model):
-            print(model)
-            return .none()
+            let viewModel = CPFViewModel(route: weakRouter, model: model)
+            let controller = CPFController(viewModel: viewModel)
+            return .push(controller)
         }
     }
 }
