@@ -21,7 +21,9 @@ end
 
 platform :ios do
   desc "Build App"
+
   lane :build do
 	build_app(scheme: "LearningSwift", workspace: "LearningSwift.xcworkspace", skip_archive: true, skip_package_ipa: true, clean: true, configuration: "Debug", skip_codesigning: true)
+
   end
 end
