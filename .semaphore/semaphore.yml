@@ -14,12 +14,11 @@ blocks:
         commands:
           - checkout
           - cache restore
-          - bundle install --path vendor/bundle
+          - bundle install
           - cache store
       jobs:
         - name: bundle exec fastlane build
           commands:
-            - bundle exec xcversion select 12.0.1
             - bundle exec fastlane build
     run:
       when: branch = 'master'
