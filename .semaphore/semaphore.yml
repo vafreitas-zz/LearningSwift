@@ -21,4 +21,4 @@ blocks:
           commands:
             - bundle exec fastlane build
     run:
-      when: branch = 'master'
+      when: '{default_branch: ''master''}'
