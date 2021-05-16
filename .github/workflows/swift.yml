@@ -14,8 +14,6 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: iOS build
-      uses: yukiarrr/ios-build-action@v1.4.0
+      uses: maierj/fastlane-action@v2.0.1
       with:
-        workspace-path: "./LearningSwift.xcworkspace"
-        scheme: "LearningSwift"
-        configuration: "Debug"
+        lane: "build"
