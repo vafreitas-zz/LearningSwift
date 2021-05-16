@@ -8,12 +8,14 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    
+    - name: iOS build
+      uses: yukiarrr/ios-build-action@v1.4.0
+      with:
+        workspace-path: "./LearningSwift.xcworkspace"
+        scheme: "LearningSwift"
+        configuration: "Debug"
