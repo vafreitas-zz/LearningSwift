@@ -11,10 +11,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-
     - name: XcodeGen
-    - uses: xavierLowmiller/xcodegen-action@1.1.2
-    
+    - run: xcodegen generate
     - name: iOS build
       uses: maierj/fastlane-action@v2.0.1
       with:
