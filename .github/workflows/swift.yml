@@ -11,19 +11,23 @@ jobs:
     steps:
     - name: Checkout Repository
     - uses: actions/checkout@v2
+    
     - name: Set Gems
       run: |
         gem install bundler
         bundle install
         
     - name: Bundle Install
-      run: bundle install
+      run: |
+         bundle install
       
     - name: Brew install
-      run: brew bundle
+      run: |
+        brew bundle
       
     - name: XcodeGen
-      run: xcodegen generate
+      run: |
+        xcodegen generate
       
     - name: iOS build
       uses: maierj/fastlane-action@v2.0.1
