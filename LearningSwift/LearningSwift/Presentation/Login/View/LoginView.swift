@@ -13,7 +13,8 @@ import TinyConstraints
 class LoginView: BaseView {
 
     // MARK: Properties
-
+    // MARK: TestGen2
+    
     let titleLabel = UILabel() .. {
         $0.text = "Login Screen"
         $0.font = UIFont.systemFont(ofSize: 42)
