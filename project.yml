@@ -1,0 +1,31 @@
+
+name: LearningSwift
+options:
+  bundleIdPrefix: com.br.LearningSwift
+packages:
+  TinyConstraints:
+    url: https://github.com/roberthein/TinyConstraints
+    from: 4.0.1
+  AloeStackView:
+    url: https://github.com/marlimox/AloeStackView
+    from: 1.2.0
+  XCoordinator:
+    url: https://github.com/quickbirdstudios/XCoordinator
+    from: 2.0.7
+projectReferences:
+  Core:
+    path: Modules/Core/Core.xcodeproj
+  Components:
+    path: Modules/Components/Components.xcodeproj
+targets:
+  LearningSwift:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources: [LearningSwift]
+    dependencies:
+      - package: TinyConstraints
+      - package: AloeStackView
+      - package: XCoordinator
+      - target: Core/Core
+      - target: Components/Components
